@@ -13,6 +13,9 @@ window.addEventListener("load", function() {
     document.getElementById("play").addEventListener("click", function() {
 		// Plays the video
         video.play();
+		
+		// Update volume information
+		document.getElementById("volume").textContent = (video.volume * 100).toFixed(0) + "%";
     });
 
     // Pause Button Element
